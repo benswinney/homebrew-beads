@@ -7,20 +7,20 @@ class Bd < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/steveyegge/beads/releases/download/v#{version}/beads_#{version}_darwin_arm64.tar.gz"
-      sha256 "f03617ba2a4e5a3ee3b39dfb6f7c82d8b6984f9da048513361bdc4c649e10949"
+      sha256 "1494363ea5450641dddfe1e8d79c03f35fbff6d1cb04a8a6c8782aa6faa04e10"
     else
       url "https://github.com/steveyegge/beads/releases/download/v#{version}/beads_#{version}_darwin_amd64.tar.gz"
-      sha256 "a53425b6e63f54bc219b4aed7730fec061fecbfddb33baca7b4a6ac0df428b78"
+      sha256 "1b40251630c6e8c803896b2a8856713da35cb790577b16da58f6cecb997e954b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/steveyegge/beads/releases/download/v#{version}/beads_#{version}_linux_arm64.tar.gz"
-      sha256 "f76ee4ceba2eee167d2b7a46490278b9250abc5d6006e64a71b2528ad21bf096"
+      sha256 "35b50f74f2f6edda16678454686954a096b1764d45ccf5f3894c36e78ce12539"
     else
       url "https://github.com/steveyegge/beads/releases/download/v#{version}/beads_#{version}_linux_amd64.tar.gz"
-      sha256 "1a79d2f6ae03c2925a7f4057149d156e99a95ea17ccef3da6ebfa180bb3d2e84"
+      sha256 "2334119a697b8b261c0867fdcc95519945aa3843703d44ee89c380f0dd3c6f9e"
     end
   end
 
