@@ -1,26 +1,26 @@
 class Bd < Formula
   desc "AI-supervised issue tracker for coding workflows"
   homepage "https://github.com/steveyegge/beads"
-  version "0.32.0"
+  version "0.32.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/steveyegge/beads/releases/download/v#{version}/beads_#{version}_darwin_arm64.tar.gz"
-      sha256 "00b343381df5e43676f207a873c602cff12d7c5b68ec259b09357c8cdbe2c211"
+      sha256 "9ea191fb4579b8d229f7c28c2c50d1c3ad7cd7f8006ffebf423f844128d36e71"
     else
       url "https://github.com/steveyegge/beads/releases/download/v#{version}/beads_#{version}_darwin_amd64.tar.gz"
-      sha256 "b8fbf7e83ecc170372b8bf1da693e05636cb1ce5406a8a43f48e5618d6d6f462"
+      sha256 "ff75ac54b5fea2527cb2634fb874ddc88bbe21c58c3b8e9db97e8c3fe6ea4321"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/steveyegge/beads/releases/download/v#{version}/beads_#{version}_linux_arm64.tar.gz"
-      sha256 "d50886c33dfb39fff39226d1b6a8e6ebd7eea02d03b800d87a50bd502a28ba88"
+      sha256 "a2e75ea9861d5ac364a234f4d826b4ae13d896cc01af8e8c7fedea5e93612c42"
     else
       url "https://github.com/steveyegge/beads/releases/download/v#{version}/beads_#{version}_linux_amd64.tar.gz"
-      sha256 "903542eeedc306230b70d2a01ba8539488af72b8b79b92bff1e88a7e6ac8f4d2"
+      sha256 "6e809906b4bd64108ed68dc4b68c8d1a22376892e090eaa44f77ef3d4391bd9f"
     end
   end
 
